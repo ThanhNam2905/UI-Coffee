@@ -8,6 +8,8 @@
 
     <!-- Link Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- Use Swiper from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <!-- Link Customize CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -15,7 +17,288 @@
 </head>
 <body>
     
+    <!-- Header section start -->
+    <header class="header">
+        <!-- Menu bar -->
+        <div class="fas fa-bars" id="menu-bar"></div>
 
+        <!-- Logo Website -->
+        <a href="index.html" class="logo">
+            <span>Coffee</span>
+            <i class="fas fa-mug-hot"></i>
+        </a>
+        <!-- menu navvigation -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+        </nav>
+        <a href="#" class="btn">book a table</a>
+    </header>
+    <!-- Header section end -->
+
+    <main>
+        <!-- Home section start -->
+        <section class="home" id="home">
+            <div class="row">
+                <div class="content">
+                    <h2>Fresh coffe in the morning</h2>
+                    <a href="#" class="btn">Buy one now</a>
+                </div>
+                <div class="images">
+                    <img src="./images/home-img-1.png" class="main-home-img" alt="">
+                </div>
+                
+            </div>
+            <div class="images-slider">
+                <img src="./images/home-img-1.png" alt="">
+                <img src="./images/home-img-2.png" alt="">
+                <img src="./images/home-img-3.png" alt="">
+            </div>
+        </section>
+        <!-- Home section end -->
+
+        <!-- About section start -->
+        <section class="about" id="about">
+            <h1 class="heading">
+                About us
+                <span>Why choose us</span>
+            </h1>
+            <div class="row">
+                <div class="images">
+                    <img src="./images/about-img.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>what's make our  coffee special!</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nisi at similique sunt reiciendis consequuntur voluptate eligendi vel error adipisci, tempora dolor? Ipsam consectetur molestias, exercitationem aspernatur consequatur possimus hic.</p>
+                    <a href="#" class="btn">Read more</a>
+                    <div class="icons-container">
+                        <div class="icons">
+                            <img src="./images/about-icon-1.png" alt="">
+                            <h4>quality coffee</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="./images/about-icon-2.png" alt="">
+                            <h4>our branch</h4>
+                        </div>
+                        <div class="icons">
+                            <img src="./images/about-icon-3.png" alt="">
+                            <h4>free delivery</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section end -->
+
+        <!-- Menu section start -->
+        <section class="menu" id="menu">
+            <h1 class="heading">our menu <span>popular menu</span></h1>
+            <div class="box-container">
+                <a href="#" class="box">
+                    <img src="./images/menu-1.png" alt="">
+                    <div class="content">
+                        <h3>our special coffee</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt dolor quibusdam quasi, exercitationem maxime!</p>
+                        <span>$8.99</span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <img src="./images/menu-2.png" alt="">
+                    <div class="content">
+                        <h3>coffee milk cold</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim expedita sed vero perspiciatis.</p>
+                        <span>$6.99</span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <img src="./images/menu-3.png" alt="">
+                    <div class="content">
+                        <h3>coffee milk hot</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloribus atque vel ab?</p>
+                        <span>$6.99</span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <img src="./images/menu-4.png" alt="">
+                    <div class="content">
+                        <h3>coffee mocha</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos facere dolores odio necessitatibus?</p>
+                        <span>$8.99</span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <img src="./images/menu-5.png" alt="">
+                    <div class="content">
+                        <h3>coffee americano</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim expedita sed vero perspiciatis.</p>
+                        <span>$6.99</span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <img src="./images/menu-6.png" alt="">
+                    <div class="content">
+                        <h3>coffee milk hot</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloribus atque vel ab?</p>
+                        <span>$6.99</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Menu section end -->
+
+        <!-- Reviews section start -->
+        <section class="review" id="review">
+            <h1 class="heading">
+                Reviews
+                <span>what people says</span>
+            </h1>
+            <div class="reviews-slider swiper">
+                <div class="warpper swiper-wrapper">
+                    <div class="box swiper-slide">
+                        <i class="fas fa-quote-left"></i>
+                        <i class="fas fa-quote-right"></i>
+                        <img src="./images/pic-1.png" alt="">
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique recusandae explicabo excepturi ipsa eveniet nesciunt.</p>
+                        <h3>John Joe</h3>
+                        <span>Customer</span>
+                    </div>
+                    <div class="box swiper-slide">
+                        <i class="fas fa-quote-left"></i>
+                        <i class="fas fa-quote-right"></i>
+                        <img src="./images/pic-2.png" alt="">
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore beatae voluptatum adipisci atque.</p>
+                        <h3>Marry Joyce</h3>
+                    </div>
+                    <div class="box swiper-slide">
+                        <i class="fas fa-quote-left"></i>
+                        <i class="fas fa-quote-right"></i>
+                        <img src="./images/pic-3.png" alt="">
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eum optio in earum consequuntur minima modi?</p>
+                        <h3>Peter Pen</h3>
+                        <span>Customer</span>
+                    </div>
+                    <div class="box swiper-slide">
+                        <i class="fas fa-quote-left"></i>
+                        <i class="fas fa-quote-right"></i>
+                        <img src="./images/pic-4.png" alt="">
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam voluptate, iste quia ullam iusto?</p>
+                        <h3>Henry Me</h3>
+                        <span>Customer</span>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- Reviews section end -->
+
+        <!-- Booking section start -->
+        <section class="book" id="book">
+            <h1 class="heading">
+                Booking 
+                <span>reserve a table</span>
+            </h1>
+            <form action="">
+                <input type="text" name="" id="" class="box" placeholder="your name">
+                <input type="email" name="" id="" class="box" placeholder="your email">
+                <input type="number" name="" id="" class="box" placeholder="your number">
+                <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+        </section>
+        <!-- Booking section end -->
+    </main>
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box our-branch">
+                <h3>Our branch</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>India</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Usa</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>France</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Japan</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Paris</a>
+            </div>
+            <div class="box quick-links">
+                <h3>Quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i>About</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i>Menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i>Review</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i>Book</a>
+            </div>
+            <div class="box contact-info">
+                <h3>Contact info</h3>
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Address:</span>
+                    <span>District 1, HCM City, VietNam</span>
+                </a>
+                <a href="tel:0942898298">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone:</span>
+                    <span>094.2898.298</span>
+                </a>
+                <a href="mailto:thanhnam290596@gmail.com">
+                    <i class="far fa-envelope"></i>
+                    <span>Email:</span>
+                    <span>thanhnam290596@gmail.com</span>
+                </a>
+            </div>
+            <div class="box follow-us">
+                <h3>Follow us</h3>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Scroll To Top -->
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+    <!-- Loading -->
+    <div class="loading-container">
+        <img src="./images/loader.gif" alt="">
+    </div>
+
+    <!-- Use Swiper from CDN -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- Link File JS -->
     <script src="./js/main.js" type="text/javascript"></script>
 </body>
